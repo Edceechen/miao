@@ -41,48 +41,140 @@
   </pre>
   <hr>
 
-</body>
-<ul>
-  <li>小学
-    <ol>
-      <li>一年级
-        <ol>
-          <li>上学期</li>
-          <li>下学期学期</li>
-        </ol>
-      </li>
-      <li>二年级</li>
-      <li>三年级</li>
-    </ol>
-  </li>
-  <li>中学</li>
-  <li>大学</li>
-</ul>
-<hr>
-<dl>
-  <dt>班级</dt>
-  <dd>三年二班</dd>
-  <dt>老师</dt>
-  <dd>张老师</dd>
-  <dd>李老师</dd>
-  <dd>王老师</dd>
-  <dt>学生</dt>
-  <dd>小明</dd>
-  <dd>豆豆</dd>
-</dl>
-<hr>
-<h2>Google搜索</h2>
-<form target="_blank" action="https://www.google.com.hk/search">
-  <input type="text" required name="q">
 
-  <button>在新窗口打开搜索结果</button>
-</form>
-<hr>
-<p>个人信息调查表</p>
-<br>
-<dl>
-  <dt></dt>
-  <dd></dd>
-  <dt></dt>
-  <dd></dd>
-</dl>
+  <ul>
+    <li>小学
+      <ol>
+        <li>一年级
+          <ol>
+            <li>上学期</li>
+            <li>下学期学期</li>
+          </ol>
+        </li>
+        <li>二年级</li>
+        <li>三年级</li>
+      </ol>
+    </li>
+    <li>中学</li>
+    <li>大学</li>
+  </ul>
+  <hr>
+  <dl>
+    <dt>班级</dt>
+    <dd>三年二班</dd>
+    <dt>老师</dt>
+    <dd>张老师</dd>
+    <dd>李老师</dd>
+    <dd>王老师</dd>
+    <dt>学生</dt>
+    <dd>小明</dd>
+    <dd>豆豆</dd>
+  </dl>
+  <hr>
+  <h2>Google搜索</h2>
+  <form target="_blank" action="https://www.google.com.hk/search">
+    <input type="text" required name="q">
+
+    <button type="submit">在新窗口打开搜索结果</button>
+  </form>
+  <hr>
+  <form action="">
+    <p>个人信息调查表</p>
+    <dl>
+      <dt>性别</dt>
+      <dd><input type="radio" name="gender" value="male">男
+        <input type="radio" name="gender" value="female">女
+      </dd>
+      <dt>年龄</dt>
+      <dd>
+        <select name="age">
+          <option value="" hidden>请选择</option>
+          <optgroup label="少年">
+            <option value="1-6">1到6岁</option>
+            <option value="6-12">6到12岁</option>
+          </optgroup>
+          <optgroup label="青年">
+            <option value="13-15">13到15岁</option>
+            <option value="16-18">16到18岁</option>
+          </optgroup>
+          <optgroup label="壮年">
+            <option value="18-22">18到22岁</option>
+            <option value="22-28">22到28岁</option>
+          </optgroup>
+        </select>
+      </dd>
+      <dt>生日</dt>
+      <dd>
+        <input type="date" name="birthday" value="">
+      </dd>
+      <dt>生辰</dt>
+      <dd>
+        <input type="time" name="shengchen" value="">
+      </dd>
+      <dt>照片</dt>
+      <dd>
+        <input type="file" name="avater" hidden id="avater-up">
+        <label for="avater-up">点我上传照片，我比文件上传按钮好看</label>
+      </dd>
+      <dt>肤色</dt>
+      <dd><input type="color" value="" name="color"></dd>
+      <dt>自我介绍</dt>
+      <dd>
+        <textarea name="intro" cols="30" rows="10">&lt;/textarea></textarea>
+      </dd>
+    </dl>
+    <fieldset disabled>
+      <legend>
+        这里面全部禁用了
+      </legend>
+      <input type="text">
+      <input type="text">
+      <input type="text">
+      <input type="text">
+    </fieldset>
+    <button>提交</button>
+    <button type="reset">重置</button>
+  </form>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>编号</th>
+        <th>品名</th>
+        <th>进价</th>
+        <th>出价</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>aaa</th>
+        <td>aaa</td>
+        <td>aaa</td>
+        <td>aaa</td>
+      </tr>
+      <tr>
+        <th>aaa</th>
+        <td>aaa</td>
+        <td>aaa</td>
+        <td>aaa</td>
+      </tr>
+      <tr>
+        <th>aaa</th>
+        <td>aaa</td>
+        <td>aaa</td>
+        <td>aaa</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <img usemap="#travel" width="300"
+    src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c" alt="">
+  <map name="travel">
+    <area shape="rect" coords="55,105,202,195" href="#" alt="coffee">
+  </map>
+  <br>
+  <a href="https://www.mi.com/" target="aaa">小米</a>
+  <iframe name="aaa" src="https://nodejs.org"> </iframe>
+  <p>aaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbbb</p>
+  <pre>aaa           bbbb</pre>
+  >>>>>>>>>>>>>>>>><<<<<<<<<< &lt;span>&lt;/span>
+</body>
