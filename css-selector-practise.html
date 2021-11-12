@@ -35,11 +35,7 @@
     color: yellow;
   }
 
-  a[href*="pdf"] {
-    font-size: 30px;
-  }
-
-  a[href*="PDF"] {
+  a[href*="pdf"i] {
     font-size: 30px;
   }
 
@@ -55,6 +51,23 @@
   <title>Document</title>
 
 </head>
+<style>
+  body>:first-child {
+    color: red;
+  }
+
+  p.a.c {
+    color: red
+  }
+
+  p.a.c span span {
+    color: green;
+  }
+
+  p.a.c span span:last-child {
+    color: blue;
+  }
+</style>
 
 <body>
   <p>红色</p>
