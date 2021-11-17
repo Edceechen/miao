@@ -8,6 +8,10 @@
   <title>Document</title>
 </head>
 <style>
+  body {
+    margin: 0;
+  }
+
   main {
     background-color: black;
 
@@ -32,6 +36,10 @@
     border-bottom: 1px dotted black;
   }
 
+  .p5 {
+    border-color: transparent;
+  }
+
   .m1 {
     margin: auto;
     width: 600px;
@@ -51,6 +59,10 @@
     margin-top: 15px;
     text-align: center;
     line-height: 34px;
+  }
+
+  div:not([class="m1"]):hover {
+    background-color: red;
   }
 
   .p4 {
@@ -92,7 +104,7 @@
 <p class="p3">link</p>
 <p class="p3">link</p>
 <p class="p3">link</p>
-<p class="p3">link</p>
+<p class="p3 p5">link</p>
 <p class="p4">©版权所有<br>本页所有布局均使用块元素</p>
 
 
