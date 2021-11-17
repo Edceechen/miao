@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 
+<meta name="" content="">
+<html>
+
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width">
+  <title></title>
   <style>
+    body {
+
+      margin: 20px;
+    }
+
+    header {
+      background-color: red;
+      min-width: 600px;
+    }
+
+    header p {
+      text-align: center;
+      width: 300px;
+      margin: auto;
+    }
+
     main {
+      padding: 0;
       max-width: 600px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
       border: 2px solid;
-      margin-left: auto;
-      margin-right: auto;
+
+    }
+
+    main div {
+      margin: 10px;
+      height: 50px;
+      background-color: pink;
+    }
+
+    main div:hover {
+      margin-left: 0px;
+      margin-right: 0px;
     }
 
     main p {
@@ -16,66 +50,34 @@
       overflow: auto;
     }
 
-    main div {
-      height: 3em;
-      background-color: pink;
-    }
-
-    main div:hover {
-      margin-left: 10px;
-      margin-right: 10px;
-
-
-    }
-
-    header div {
-      width: 600px;
+    section {
       margin: auto;
-    }
-
-    .d1 {
-      margin-left: auto;
-      margin-right: auto;
-      height: 0px;
-      width: 0px;
-      /* border: 50px red solid; */
-      border-top: 50px solid white;
-      border-left: 50px solid white;
-      border-right: 50px solid white;
-      border-bottom: 50px orange solid;
-    }
-
-    body {
-      margin-top: 20px;
+      border: 50px solid red;
+      border-color: transparent transparent orange transparent;
+      width: 0;
     }
   </style>
+</head>
 
 <body>
-  <header style="background-color: red;">
-    <div>aaaa</div>
+  <header>
+    <p>aaaaa</p>
   </header>
-  <main style="margin-top: 20px;">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      Vitae sapiente voluptas officiis, praesentium, nemo iure cumque nihil,
-      facere hic asperiores dicta commodi magni,
-      voluptates eaque esse atque nesciunt! Cupiditate, modi.
-    </p>
-    <div>
 
-    </div>
+  <main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sapiente voluptas officiis, praesentium, nemo
+      iure cumque nihil, facere hic asperiores dicta commodi magni, voluptates eaque esse atque nesciunt! Cupiditate,
+      modi.</p>
+    <div></div>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi accusantium
-      deleniti consequuntur, enim nulla voluptatum qui ducimus esse rem eius eligendi
-      consequatur sint. Sunt ut, est iusto neque numquam. Lorem ipsum dolor sit amet,
-      consectetur adipisicing elit. Laboriosam animi perspiciatis eos, molestias
-      provident, quae ullam! Obcaecati suscipit optio labore iusto veniam facere,
-      amet officiis, eveniet voluptatibus molestiae, dignissimos dolor!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi accusantium deleniti consequuntur, enim nulla
+      voluptatum qui ducimus esse rem eius eligendi consequatur sint. Sunt ut, est iusto neque numquam.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi perspiciatis eos, molestias provident,
+      quae ullam! Obcaecati suscipit optio labore iusto veniam facere, amet officiis, eveniet voluptatibus molestiae,
+      dignissimos dolor!
     </p>
   </main>
-  <br>
-  <div class="d1">
-
-  </div>
-
+  <section></section>
 </body>
+
+</html>
