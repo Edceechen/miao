@@ -64,22 +64,48 @@
 
   }
 
-  .n1:hover {}
+  li:hover {
+    background-color: coral;
+  }
+
+  .n1:hover li {
+    display: block;
+  }
+
+  .n2:hover li {
+    display: block;
+  }
+
+  .n3:hover li {
+    display: block;
+  }
+
+  .n4:hover li {
+    display: block;
+  }
 
   .mu1 {
 
-    position: fixed;
-    margin-left: 120px;
-    margin-top: 40px;
-    width: 80px;
-    height: 110px;
+    position: relative;
+
   }
 
   .mu1 li {
-    width: 78px;
-    height: 25px;
+    display: none;
+
 
   }
+
+  ul {
+    position: relative;
+    left: -90px;
+  }
+
+  ul li {
+    width: 128px;
+    text-align: center;
+  }
+
 
 
 
@@ -91,16 +117,39 @@
 
 <body>
   <div class="main">
-    <div class="m1 c1 n1">主页</div>
-    <div class="m2 c1">故事</div>
-    <div class="m3 c1">幕后</div>
-    <div class="m4 c1">鸣谢</div>
-    <ul class="mu1 n1">
-      <li>AAA</li>
-      <li>BBB</li>
-      <li>CCC</li>
-      <li>DDD</li>
-    </ul>
+    <div class="m1 c1 n1">主页
+      <ul class="mu1 n1">
+        <li>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+      </ul>
+    </div>
+    <div class="m2 c1 n2">故事
+      <ul class="mu1 n2">
+        <li>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+      </ul>
+    </div>
+    <div class="m3 c1 n3">幕后
+      <ul class="mu1 n3">
+        <li>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+      </ul>
+    </div>
+    <div class="m4 c1 n4">鸣谢
+      <ul class="mu1 n4">
+        <li>AAA</li>
+        <li>BBB</li>
+        <li>CCC</li>
+        <li>DDD</li>
+      </ul>
+    </div>
+
   </div>
 </body>
 
