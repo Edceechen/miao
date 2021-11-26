@@ -8,25 +8,29 @@
   <title>Document</title>
 </head>
 <style>
-  .box {
+  label {
+    display: block;
     margin-left: 0;
     width: 100px;
     height: 100px;
     background-image: url(https://edceechen.github.io/miao/img/web_heart_animation.png);
     background-repeat: no-repeat;
+
   }
 
-  .box.box:hover {
-    background-position: -2500px;
-    transition: 1s steps(6, jump-none);
+  input:checked+label {
+    background-position: -2800px;
+    transition: 0.46666s steps(28);
+
   }
 </style>
 
 <body>
   <div>
-    <div class="box">
+    <input type="checkbox" name="" id="heart" hidden>
+    <label for="heart">
 
-    </div>
+    </label>
   </div>
 </body>
 
