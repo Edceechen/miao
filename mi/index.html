@@ -61,7 +61,7 @@
 
   .head {
     width: 1280px;
-    height: 100px;
+    height: 80px;
   }
 
   .manu1 {
@@ -113,26 +113,124 @@
     width: 160px;
 
   }
+
+  .main {
+
+    width: 1240px;
+    height: 440px;
+    background-color: #9196a1;
+    margin: auto;
+  }
+
+  .manuleft {
+    color: white;
+    margin-left: -40px;
+    padding-top: 20px;
+    margin-top: 0px;
+    float: left;
+  }
+
+  .manuleft li {
+    list-style: none;
+    width: 234px;
+    height: 40px;
+    background-color: #9196a1;
+    line-height: 40px;
+    vertical-align: middle;
+    position: relative;
+
+  }
+
+  .manuleft li:hover {
+    background-color: orange;
+  }
+
+  .manuleft li b {
+    position: absolute;
+
+    left: 180px;
+
+  }
+
+  .slider {
+    overflow: hidden;
+    width: 1006px;
+    height: 440px;
+    background-color: aqua;
+    float: left;
+  }
+
+
+  .dleft {
+    z-index: 2;
+    top: 310px;
+    width: 40px;
+    height: 80px;
+    background-image: url(https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png);
+    background-repeat: no-repeat;
+    position: absolute;
+
+  }
+
+  .dright {
+    z-index: 2;
+    top: 310px;
+    left: 1222px;
+    width: 40px;
+    height: 80px;
+    background-image: url(https://i1.mifile.cn/f/i/2014/cn/icon/icon-slides.png);
+    background-repeat: no-repeat;
+    background-position-x: -45px;
+    position: absolute;
+
+  }
+
+  .slide {
+    display: none;
+
+  }
+
+  .slide img {
+    position: absolute;
+    height: 440px;
+    width: 1006px;
+    padding-left: -200px;
+  }
+
+
+
+  input {
+    display: none;
+
+  }
+
+  input:nth-child(1):checked~.slides .slide:nth-child(1),
+  input:nth-child(2):checked~.slides .slide:nth-child(2),
+  input:nth-child(3):checked~.slides .slide:nth-child(3),
+  input:nth-child(4):checked~.slides .slide:nth-child(4) {
+    display: block;
+
+  }
 </style>
 
 <body>
   <header>
     <a class="s1" href="sds">小米商城</a><span>|</span>
-    <a>MIUI</a><span>|</span>
-    <a>loT</a><span>|</span>
-    <a>云服务</a><span>|</span>
-    <a>天星数科</a><span>|</span>
-    <a>有品</a><span>|</span>
-    <a>小爱开放平台</a><span>|</span>
-    <a>企业团购</a><span>|</span>
-    <a>资质证照</a><span>|</span>
-    <a>协议规则</a><span>|</span>
-    <a>下载app</a><span>|</span>
-    <a>智能生活</a><span>|</span>
-    <a>Select Location</a>
-    <a class="a1">登录</a><span>|</span>
-    <a>注册</a><span>|</span>
-    <a>消息通知</a>
+    <a href="sds">MIUI</a><span>|</span>
+    <a href="sds">loT</a><span>|</span>
+    <a href="sds">云服务</a><span>|</span>
+    <a href="sds">天星数科</a><span>|</span>
+    <a href="sds">有品</a><span>|</span>
+    <a href="sds">小爱开放平台</a><span>|</span>
+    <a href="sds">企业团购</a><span>|</span>
+    <a href="sds">资质证照</a><span>|</span>
+    <a href="sds">协议规则</a><span>|</span>
+    <a href="sds">下载app</a><span>|</span>
+    <a href="sds">智能生活</a><span>|</span>
+    <a href="sds">Select Location</a>
+    <a class="a1" href="sds">登录</a><span>|</span>
+    <a href="sds">注册</a><span>|</span>
+    <a href="sds">消息通知</a>
     <div class="shopcar">购物车(0)</div>
   </header>
 </body>
@@ -170,6 +268,61 @@
       civi</li>
   </ul>
 </div>
+<div class="main">
+  <div class="mleft">
+    <ul class="manuleft">
+      <li>手机<b>></b>
+      </li>
+      <li>电视<b>></b></li>
+      <li>笔记本 平板<b>></b></li>
+      <li>家电<b>></b></li>
+      <li>出行 穿戴<b>></b></li>
+      <li>智能 路由器<b>></b></li>
+      <li>电源 配件<b>></b></li>
+      <li>健康 儿童<b>></b></li>
+      <li>耳机 音箱<b>></b></li>
+      <li>生活 箱包<b>></b></li>
+    </ul>
+  </div>
+
+  <div class="slider">
+    <input type="radio" name="slider" id="i1" checked>
+    <input type="radio" name="slider" id="i2">
+    <input type="radio" name="slider" id="i3">
+    <input type="radio" name="slider" id="i4">
+    <div class="slides">
+      <div class="slide p1">
+        <label for="i4" class="dleft"></label>
+        <label for="i2" class="dright"></label>
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/78d0483ed36158659fcf65a19a9b249a.jpeg?w=2452&h=920"
+          alt="">
+      </div>
+      <div class="slide p2">
+        <label for="i1" class="dleft"></label>
+        <label for="i3" class="dright"></label>
+        <img
+          src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fc0f553382bb5143e667b284dfcf02db.jpg?thumb=1&w=1839&h=690&f=webp&q=90"
+          alt="">
+      </div>
+      <div class="slide p3">
+        <label for="i2" class="dleft"></label>
+        <label for="i4" class="dright"></label>
+        <img
+          src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/918820682e4a490221cfd92b24c14b86.jpg?thumb=1&w=1839&h=690&f=webp&q=90"
+          alt="">
+      </div>
+      <div class="slide p4">
+        <label for="i3" class="dleft"></label>
+        <label for="i1" class="dright"></label>
+        <img
+          src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61bef947ca0b863003b3e68336192a3a.jpg?thumb=1&w=1839&h=690&f=webp&q=90"
+          alt="">
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 
 </html>
