@@ -8,6 +8,27 @@
   <title>mi</title>
 </head>
 <style>
+  * {
+    background-color: rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 0 1px red;
+  }
+
+  @font-face {
+    font-family: MiFont;
+    src: url(./mi.woff);
+    font-weight: 400
+  }
+
+  [mifont] {
+    font-family: MiFont;
+  }
+
+
+  html,
+  body {
+    height: 100%;
+  }
+
   body {
     margin: 0;
   }
@@ -40,6 +61,15 @@
     margin-left: 150px;
   }
 
+  .shopcar span {
+    color: rgb(151, 151, 151);
+    float: left;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 1.6em;
+
+  }
+
   .shopcar {
     color: rgb(151, 151, 151);
     font-size: 14px;
@@ -62,22 +92,43 @@
     height: 56px;
   }
 
+  .headle {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+
   .head {
-    margin: auto;
+    margin-top: 20px;
+    display: flow-root;
+    margin-left: auto;
+    margin-right: auto;
     width: 1260px;
     height: 80px;
   }
 
   .manu1 {
-    margin: auto;
-    margin-left: 130px;
+
+    margin-left: 200px;
+    height: 65px;
+    width: 500px;
+
+  }
+
+  .manu2 {
+    list-style-type: none;
+    float: left;
+    height: 65px;
+    width: 60px;
   }
 
   .manu1 li {
-    margin-top: 20px;
+    height: 65px;
+    margin-top: 0px;
     list-style: none;
     float: left;
-    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
   }
 
   .manu1 li:hover {
@@ -315,7 +366,10 @@
   }
 
   .advertise1 {
-    margin: auto;
+    margin-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
     background-size: cover;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -327,9 +381,152 @@
 
 
   .advertise {
-    margin: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1240px;
     width: 100%;
-    background-color: wheat;
+    height: 6410px;
+    background-color: #f5f5f5;
+  }
+
+  .box1 {
+    margin-top: 20px;
+    height: 614px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+    gap: 14px;
+    align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+
+  .firstb {
+
+    width: 234px;
+    height: 614px;
+
+  }
+
+  .box1 section {
+    text-align: center;
+    width: 234px;
+    height: 300px;
+
+  }
+
+  .firstb img {
+    width: 234px;
+    height: 614px;
+  }
+
+  .box1 section img {
+
+    margin-top: 15px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .f1 {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h4 {
+
+    font-weight: 400;
+
+  }
+
+  section p {
+
+    margin-top: -20px;
+    font-size: 14px;
+    opacity: 0.4;
+  }
+
+  section span {
+    font-size: 15px;
+    color: red;
+  }
+
+  .hidbox1 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    z-index: 3;
+    height: 0px;
+    overflow: hidden;
+
+    /* min-width: 1240px; */
+
+
+  }
+
+
+  .u2 {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 500px;
+    position: absolute;
+    width: 120px;
+    height: 65px;
+    top: 16px;
+
+  }
+
+  .hidul img {
+    width: 160px;
+    height: 110px;
+
+  }
+
+  .hiul {
+    min-width: 1260px;
+    width: 1260px;
+
+  }
+
+  .hidul li {
+    margin-left: 20px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+  }
+
+  .hidbox1 .hidul li:nth-child(1) {
+    margin-left: auto;
+  }
+
+  .manu1:hover .hidbox1 {
+    transition: .2s;
+    height: 200px;
+
+  }
+
+  .u2:hover .hidul {
+    display: none;
+
+  }
+
+  .manu1 li:hover .hidbox1 {
+    z-index: 100;
   }
 </style>
 
@@ -351,22 +548,316 @@
     <a class="a1" href="sds">登录</a><span>|</span>
     <a href="sds">注册</a><span>|</span>
     <a href="sds">消息通知</a>
-    <div class="shopcar">购物车(0)</div>
+    <div class="shopcar">
+      <span mifont>&#XE60C;</span>购物车(0)
+    </div>
   </header>
 </body>
-<div class="head">
-  <img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" class="logo1">
-  <ul class="manu1">
-    <li id="l1 lh1">Xiaomi手机</li>
-    <li>Redmi红米</li>
-    <li>电视</li>
-    <li>笔记本</li>
-    <li>平板</li>
-    <li>家电</li>
-    <li>路由器</li>
-    <li>服务</li>
-    <li>社区</li>
-  </ul>
+<div class="headle">
+  <div class="head">
+    <img src="https://s02.mifile.cn/assets/static/image/logo-mi2.png" class="logo1">
+    <ul class="manu1">
+      <li id="l1 lh1">Xiaomi手机 <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>Redmi红米
+        <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>9元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>电视
+        <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>笔记本
+        <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>平板
+        <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>家电
+        <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>路由器
+        <div class="hidbox1">
+          <ul class="hidul">
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/087c52d253d9301dff7743d6bf2d0330.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/85e44ea2405ff8414148bbde7446b137.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/1a359e9346e3c6ee8c9d8389e3fd9458.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a1c45eadcedeb27b1cafca0359422da9.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+            <li>
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e3379b5422cb06e5c8a0c546445606.png?thumb=1&w=240&h=165&f=webp&q=90">
+              <p>xiaomicivi</p>
+              <span>1799元起</span>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+
+      <ul class="u2">
+        <li>服务</li>
+        <li>社区</li>
+      </ul>
+
+
+
+
+
+
+  </div>
+
   <ul class="uphone">
     <li class="lh1"><img
         src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">xiaomi
@@ -387,6 +878,7 @@
         src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8cad77bda138fd94eadbc2ddfced7c56.png?thumb=1&w=240&h=165&f=webp&q=90">xiaomi
       civi</li>
   </ul>
+</div>
 </div>
 <div class="main">
   <div class="mleft">
@@ -478,7 +970,129 @@
   <div class="advertise1">
 
   </div>
-
+  <p class="f1">手机</p>
+  <div class="box1">
+    <div class="firstb"><img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=351&h=921&f=webp&q=90">
+    </div>
+    <section><img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6d0a3e7acc3e91e2cfd83dbbe1d1c029.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7290b681343512c60e3a845379f3335f.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5c752522100ecd364cc53752bb660bc.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c001ebc4aee69bc9ff6fae9ecf9137d0.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ab07e0fcbec3beb8b0f409db8bee8da4.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section class="sec1">
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3490cfc52dc7c9abf9badfa1dc2d0eae.png?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section class="sec2">
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+  </div>
+  <!-- 第二段 -->
+  <p class="f1">手机</p>
+  <div class="box1">
+    <div class="firstb"><img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c583f2edc613f1be20fa415910b13ce3.jpg?thumb=1&w=351&h=921&f=webp&q=90">
+    </div>
+    <section><img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6d0a3e7acc3e91e2cfd83dbbe1d1c029.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7290b681343512c60e3a845379f3335f.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5c752522100ecd364cc53752bb660bc.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c001ebc4aee69bc9ff6fae9ecf9137d0.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section>
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ab07e0fcbec3beb8b0f409db8bee8da4.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section class="sec1">
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3490cfc52dc7c9abf9badfa1dc2d0eae.png?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+    <section class="sec2">
+      <img
+        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+      <h4>Redmi Note 11 Pro系列</h4>
+      <p>Redmi Note 11 Pro系列</p>
+      <span>1799元</span>
+    </section>
+  </div>
 </div>
 
 </html>
