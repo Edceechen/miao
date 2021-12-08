@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @keyframes ro1 {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+
+  }
+
+  @keyframes ro2 {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .box {
+    animation: ro2 5s linear 9999;
+
+    width: 600px;
+    height: 110px;
+    margin-left: 200px;
+    margin-top: 200px;
+  }
+
+  img {
+
+    animation: ro1 5s linear reverse 9999;
+    height: 100px;
+    width: 130px;
+  }
+
+  /* img:hover {
+    transition: 5s linear;
+    transform: rotate(360deg);
+  } */
+</style>
+
+<body>
+  <div class="box">
+    <img src="./c995d143ad4bd113c589a7a348afa40f4afb05de.png">
+  </div>
+</body>
+
+</html>

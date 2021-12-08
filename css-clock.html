@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @keyframes miaos1 {
+    from {
+      transform: rotate(0deg);
+
+    }
+
+    to {
+      transform: rotate(360deg);
+
+    }
+  }
+
+  @keyframes miaosd {
+    0% {
+      transform: rotate(0);
+    }
+
+    5% {
+      transform: rotate(2deg);
+    }
+
+    10% {
+      transform: rotate(0);
+    }
+
+    15% {
+      transform: rotate(-1deg);
+
+    }
+
+    20% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+
+  .miao {
+    transform-origin: 5.8px 94.5px;
+    animation-name: miaos1;
+    animation: miaos1 60s steps(60, end) infinite;
+
+  }
+
+  .box {
+    position: relative;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+
+  }
+
+  .b2 {
+    position: absolute;
+    background-origin: content box;
+    width: 300px;
+    height: 300px;
+    background-image: url(./clock.jpg);
+    background-position: center 0;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+  }
+
+  .m1 {
+    animation-name: miaosd;
+    animation: miaosd 1s infinite;
+    transform-origin: 5.8px 94.5px;
+    height: 100px;
+    margin-left: 144.5px;
+    margin-top: 55.7px;
+  }
+
+  .miao {
+    background-image: url(./miaozhen.jpg);
+    opacity: 0.2;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    width: 12px;
+    height: 100px;
+
+  }
+</style>
+
+<body>
+
+  <div class="box">
+    <div class="b2">
+      <div class="m1">
+        <section class="miao"></section>
+      </div>
+      <section class="fen"></section>
+      <section class="shi"></section>
+    </div>
+  </div>
+
+</body>
+
+</html>
