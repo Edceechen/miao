@@ -668,8 +668,8 @@
   }
 
   .znbox {
-
-    height: 50px;
+    position: relative;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
     width: 1240px;
@@ -678,6 +678,7 @@
   .znbox .zn {
     width: 200px;
     margin-left: 0;
+    position: relative;
   }
 
   .hot {
@@ -694,16 +695,108 @@
   }
 
   .nul {
-    height: 50px;
-    margin-left: 500px;
-    float: left;
-    list-style: none;
+    overflow: hidden;
+    margin-top: 30px;
 
+    margin-left: 1080px;
+    width: 150px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
   }
 
   .nul li {
-    height: 40px;
+    width: 75px;
+    height: 50px;
+    float: left;
   }
+
+  .nli1 {
+    margin-top: 20px;
+
+  }
+
+  .watch,
+  .wear {
+    top: 80px;
+    left: 0;
+    width: 1240px;
+    position: absolute;
+    height: 614px;
+  }
+
+  .watch li,
+  .wear li {
+    background-color: white;
+    list-style: none;
+  }
+
+  .watch li:nth-child(1),
+  .wear li:nth-child(1) {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -40px;
+    width: 234px;
+    height: 614px;
+    background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9895c56a7b792fb9053e3085fc261072.jpg?thumb=1&w=351&h=921&f=webp&q=90);
+  }
+
+  .watch li:nth-child(n+2):nth-child(-n+5),
+  .wear li:nth-child(n+2):nth-child(-n+5) {
+    margin-left: 17px;
+    width: 234px;
+    height: 300px;
+  }
+
+  .watch li:nth-child(n+6):nth-child(-n+8),
+  .wear li:nth-child(n+6):nth-child(-n+8) {
+    margin-top: 15px;
+    margin-left: 17px;
+    width: 234px;
+    height: 300px;
+  }
+
+  .watch li:nth-child(9),
+  .wear li:nth-child(9) {
+    margin-top: 15px;
+    margin-left: 17px;
+    width: 234px;
+    height: 150px;
+  }
+
+  .watch li:nth-child(-n+8) img,
+  .wear li:nth-child(-n+8) img {
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .watch li:nth-child(-n+8) p,
+  .wear li:nth-child(-n+8) p {
+    font-size: 14px;
+    opacity: 0.4;
+    margin-top: -20px;
+  }
+
+  .watch li:nth-child(-n+8) span,
+  .wear li:nth-child(-n+8) span {
+    color: red;
+  }
+
+  .more {
+    font-size: 50px;
+  }
+
+  .browse {
+    margin-top: 50px;
+  }
+
+  .browse p {
+    line-height: 5px;
+
+  }
+
+  .wear {}
 </style>
 
 <body>
@@ -2578,71 +2671,136 @@
   <div class="znbox">
     <span class="f1 zn" style="float: left;">智能穿戴</span>
     <ul class="nul">
-      <li>1</li>
-      <li>2</li>
+      <li class="nli1">热门
+        <div class="watch">
+          <ul class="remen">
+            <li></li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f84503dbf5adbdf17111c61d4a7cf893.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b28153b80cb2c67564608e56d5c2f3f3.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cfec307342eb35ee4a437f664004c50f.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0cc4e8e58d7288cd8dff13b98bdc3ea8.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11570d5371f16d2d9b19f504e09d01f0.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fcf24e40ff09a254857ac8b4ace25b8.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/72c4b2540c851b542e505058f1603823.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li>
+              <div class="browse">
+
+                <div class="pliulan" style="width: 160px; font-size: 20px;">
+                  浏览更多
+                </div>
+                <div style="width: 110px;">热门</div>
+                <p mifont class="more" style="margin-top:-30px; margin-left: 110px;color: orange;">&#XE615;
+                </p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </li>
+
+      <li class="nli1">穿戴
+        <div class="wear">
+          <ul class="remen">
+            <li></li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f84503dbf5adbdf17111c61d4a7cf893.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b28153b80cb2c67564608e56d5c2f3f3.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cfec307342eb35ee4a437f664004c50f.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0cc4e8e58d7288cd8dff13b98bdc3ea8.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11570d5371f16d2d9b19f504e09d01f0.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fcf24e40ff09a254857ac8b4ace25b8.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>399元</span>
+            </li>
+            <li><img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/72c4b2540c851b542e505058f1603823.jpg?thumb=1&w=300&h=300&f=webp&q=90">
+              <h4>Redmi 手表 2</h4>
+              <p>AMOLED高清大屏</p>
+              <span>400元</span>
+            </li>
+            <li>
+              <div class="browse">
+
+                <div class="pliulan" style="width: 160px; font-size: 20px;">
+                  浏览更多
+                </div>
+                <div style="width: 110px;">热门</div>
+                <p mifont class="more" style="margin-top:-30px; margin-left: 110px;color: orange;">&#XE615;
+                </p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+
+      </li>
+
     </ul>
 
   </div>
-  <div class="box1 one">
-    <div class="firstb"><img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9895c56a7b792fb9053e3085fc261072.jpg?thumb=1&w=351&h=921&f=webp&q=90">
-    </div>
-    <section><img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f84503dbf5adbdf17111c61d4a7cf893.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section>
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/11570d5371f16d2d9b19f504e09d01f0.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section>
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b28153b80cb2c67564608e56d5c2f3f3.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section>
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2fcf24e40ff09a254857ac8b4ace25b8.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section>
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cfec307342eb35ee4a437f664004c50f.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section>
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/72c4b2540c851b542e505058f1603823.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section class="sec1">
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0cc4e8e58d7288cd8dff13b98bdc3ea8.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-    <section class="sec2">
-      <img
-        src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/61454401f855cf5ed64747a6ac04bae5.jpg?thumb=1&w=300&h=300&f=webp&q=90">
-      <h4>Redmi Note 11 Pro系列</h4>
-      <p>Redmi Note 11 Pro系列</p>
-      <span>1799元</span>
-    </section>
-  </div>
+</div>
 </div>
 
 </html>

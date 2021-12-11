@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div {
+
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+  }
+
+  .d1 {
+    position: relative;
+  }
+
+  .c1 {
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+  }
+
+  .c1 {
+    left: 50%;
+    top: 50%;
+    background-color: aqua;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+  }
+
+  .d2 {
+    margin-top: 30px;
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
+
+  }
+
+  .c2 {
+
+    display: inline-block;
+  }
+
+  .d3 {
+    margin-left: 150px;
+    margin-top: -230px;
+
+  }
+
+  .c3 {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+  }
+
+  /* table {
+    margin: auto;
+
+    background-color: blue;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+  } */
+
+  .c4 {
+    margin: auto;
+  }
+
+  .d4 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+
+  .c4 {
+
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
+  }
+
+  span {
+    background-color: red;
+  }
+
+  .d5 {
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .c5 {
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+
+  }
+</style>
+
+<body>
+  <div class="d1">
+    <section class="c1">
+      定位居中
+    </section>
+  </div>
+
+  <div class="d2">
+
+    行内块居中
+
+  </div>
+
+  <div class="d3">
+    <section class="c3">
+      <span>表格居中</span>
+    </section>
+  </div>
+  <div class="d4">
+    <section class="c4">
+      flex居中
+    </section>
+  </div>
+  <div class="d5">
+    <section class="c5">
+      flex居中
+    </section>
+  </div>
+</body>
+
+</html>

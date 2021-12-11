@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  div.slider {
+    width: 300px;
+    margin: auto;
+  }
+
+  .slice {
+    margin-top: 100px;
+
+    width: 300px;
+    height: 200px;
+  }
+
+  @keyframes leave {
+    from {
+      left: 0;
+    }
+
+    to {
+      left: 100%;
+    }
+  }
+
+  .slice div {
+    overflow: hidden;
+
+    width: 25%;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+
+  .slice span {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+    display: block;
+    left: -100%;
+    animation: leave 1s;
+    background-size: 300px 200px;
+
+  }
+
+  input:nth-child(1):checked~.slice div span:nth-child(1),
+  input:nth-child(2):checked~.slice div span:nth-child(2),
+  input:nth-child(3):checked~.slice div span:nth-child(3) {
+    left: 0%;
+    animation: none;
+    z-index: 8;
+  }
+
+  div span:nth-child(1) {
+    background-image: url(https://travel.12306.cn/imgs/resources/uploadfiles/images/6d77d0ea-53d0-4518-b7e9-e53795b4920c_product_W572_H370.jpg);
+    background-size: 300px 200px;
+  }
+
+  div span:nth-child(2) {
+    background-image: url(https://travel.12306.cn/imgs/resources/uploadfiles/images/c7c03732-3c86-4308-aea7-df747d4999e8_product_W572_H370.jpg);
+    background-size: 300px 200px;
+  }
+
+  div span:nth-child(3) {
+    background-image: url(https://travel.12306.cn/imgs/resources/uploadfiles/images/fcd7173f-7651-46e7-a126-bdc199e1f6f7_product_W572_H370.jpg);
+    background-size: 300px 200px;
+  }
+
+  div .d2 span {
+    background-position: -75px, 0;
+  }
+
+  div .d3 span {
+    background-position: -150px, 0;
+  }
+
+  div .d4 span {
+    background-position: -225px, 0;
+  }
+</style>
+
+<body>
+  <div class="slider">
+    <input type="radio" name="r1" checked>
+    <input type="radio" name="r1">
+    <input type="radio" name="r1">
+
+
+
+    <div class="slice">
+      <div class="d1">
+        <span>11</span>
+        <span>21</span>
+        <span>31</span>
+      </div>
+      <div class="d2">
+        <span>12</span>
+        <span>22</span>
+        <span>32</span>
+      </div>
+      <div class="d3">
+        <span>13</span>
+        <span>23</span>
+        <span>33</span>
+      </div>
+      <div class="d4">
+        <span>14</span>
+        <span>24</span>
+        <span>34</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
