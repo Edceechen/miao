@@ -839,4 +839,15 @@
     transition: none;
   }
 
+  .ved{
 
+    background-color: blue;
+    width: 1240px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .ved p{
+    font-size: 25px;
+  }
