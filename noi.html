@@ -302,5 +302,66 @@
   }
 </script>
 <script id="ch0104/18">
+  var x = Number(prompt())
+  var y = Number(prompt())
+  if (x >= -1 && x <= 1 && y >= -1 && y <= 1) {
+    console.log('yes')
+  } else {
+    console.log('no')
+  }
+</script>
+<script id="ch0104/19">
+  var a = Number(prompt())
+  var b = Number(prompt())
+  var c = prompt('')
+  var x = a
+  if (b == 0 && c == '/' || a == 0 && c == '/') {
+    console.log('Divided by zero!')
+  } else if (c !== '+' && c !== '-' && c !== '*' && c !== '/') {
+    console.log('Invalid operator!')
+  } else {
+    if (c == '+') {
+      console.log(a + b)
+    }
+    if (c == '-') {
+      console.log(a - b)
+    }
+    if (c == '*') {
+      console.log(a * b)
+    }
+    if (c == '/') {
+      console.log(a / b)
+    }
+  }
+</script>
+<script id="ch0104/20">
+  var a = parseInt(prompt('a:'))
+  var b = parseInt(prompt('b:'))
+  var c = parseInt(prompt('c:'))
+  var delta = b * b - 4 * a * c
+  var sqrtDelta = Math.sqrt(delta)
+  var x1 = ((-b + sqrtDelta) / (2 * a)).toFixed(5)
+  var x2 = ((-b - sqrtDelta) / (2 * a)).toFixed(5)
+  var s1 = (-b / (2 * a)).toFixed(5)
+  var s2 = (Math.sqrt(-delta) / (2 * a)).toFixed(5)
+  if (delta > 0) {
+    alert('x1=' + x1)
+    alert('x2=' + x2)
+  } else if (delta == 0) {
+    var x = (-b) / (2 * a)
+    alert('x1=x2' + x1)
 
+  } else if (delta < 0) {
+    alert('x1=' + s1.toString() + '+' + s2.toString() + "i")
+    alert('x1=' + s1.toString() + '-' + s2.toString() + "i")
+  }
+
+</script>
+<script id="ch0104/21">
+  var n = Number(prompt())
+  var x = Number(prompt())
+  var y = Number(prompt())
+  if (y % x > 0) {
+    console.log(n - Math.ceil(y / x))
+  }
 </script>
