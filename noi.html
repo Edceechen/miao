@@ -195,7 +195,7 @@
       console.log(5, 7)
     }
     else {
-      if (n % 3 == 0 || n % 5 == 0 || n % 7 == 0) {
+      if ((n % 3 == 0 && n % 5 !== 0 && n % 7 !== 0) || (n % 5 == 0 && n % 3 !== 0 && n % 7 !== 0) || (n % 7 == 0 && n % 3 !== 0 && n % 5 !== 0)) {
         console.log(n)
       }
       else {
@@ -281,7 +281,7 @@
   var a = Number(prompt())
   var b = Number(prompt())
   var c = Number(prompt())
-  if ((a + b) > c && (a + c) > b && (c + b) > a) {
+  if ((a + b) > c && (a + c) > b && (c + b) > a && (a - b) < c && (a - c) < b && (c - b) < a) {
     console.log('YES')
   } else {
     console.log('no')
@@ -349,7 +349,7 @@
     alert('x2=' + x2)
   } else if (delta == 0) {
     var x = (-b) / (2 * a)
-    alert('x1=x2' + x1)
+    alert('x1=x2=' + x1)
 
   } else if (delta < 0) {
     alert('x1=' + s1.toString() + '+' + s2.toString() + "i")
