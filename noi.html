@@ -181,28 +181,26 @@
 </script>
 <script id="ch0104/09">
   var n = prompt() - 0
-  if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0) {
-    console.log(3, 5, 7)
-  } else {
-    if ((n % 3 == 0 && n % 5 == 0)) {
-      console.log(3, 5)
-    }
-    if ((n % 3 == 0 && n % 7 == 0)) {
-      console.log(3, 7)
-    }
+  var flag = false
 
-    if ((n % 5 == 0 && n % 7 == 0)) {
-      console.log(5, 7)
-    }
-    else {
-      if ((n % 3 == 0 && n % 5 !== 0 && n % 7 !== 0) || (n % 5 == 0 && n % 3 !== 0 && n % 7 !== 0) || (n % 7 == 0 && n % 3 !== 0 && n % 5 !== 0)) {
-        console.log(n)
-      }
-      else {
-        console.log('n')
-      }
-    }
+  if (n % 3 == 0) {
+    console.log(3)
+    flag = true
   }
+  if (n % 5 == 0) {
+    console.log(5)
+    flag = true
+  }
+  if (n % 7 == 0) {
+    console.log(7)
+    flag = true
+  }
+
+  if (!flag) {
+    console.log('n')
+  }
+
+
 </script>
 <script id="ch0104/10">
   var a = prompt() - 0
@@ -278,10 +276,16 @@
   }
 </script>
 <script id="ch0104/16">
-  var a = Number(prompt())
-  var b = Number(prompt())
-  var c = Number(prompt())
-  if ((a + b) > c && (a + c) > b && (c + b) > a && (a - b) < c && (a - c) < b && (c - b) < a) {
+  var a = Math.abs(Number(prompt()))
+  var b = Math.abs(Number(prompt()))
+  var c = Math.abs(Number(prompt()))
+  if (a > b && a > c && a < (b + c)) {
+    console.log('YES')
+  }
+  if (b > a && b > c && b < (a + c)) {
+    console.log('YES')
+  }
+  if (c > a && c > b && c < (a + b)) {
     console.log('YES')
   } else {
     console.log('no')
@@ -352,8 +356,8 @@
     alert('x1=x2=' + x1)
 
   } else if (delta < 0) {
-    alert('x1=' + s1.toString() + '+' + s2.toString() + "i")
-    alert('x1=' + s1.toString() + '-' + s2.toString() + "i")
+    alert('x1=' + s1.toString() + '+' + s2.toString() + "i" + ";")
+    alert('x1=' + s1.toString() + '-' + s2.toString() + "i" + ";")
   }
 
 </script>
