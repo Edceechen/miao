@@ -279,13 +279,7 @@
   var a = Math.abs(Number(prompt()))
   var b = Math.abs(Number(prompt()))
   var c = Math.abs(Number(prompt()))
-  if (a > b && a > c && a < (b + c)) {
-    console.log('YES')
-  }
-  if (b > a && b > c && b < (a + c)) {
-    console.log('YES')
-  }
-  if (c > a && c > b && c < (a + b)) {
+  if (a < (b + c) && a > (b - c) && a > (c - b)) {
     console.log('YES')
   } else {
     console.log('no')
@@ -357,7 +351,7 @@
 
   } else if (delta < 0) {
     alert('x1=' + s1.toString() + '+' + s2.toString() + "i" + ";")
-    alert('x1=' + s1.toString() + '-' + s2.toString() + "i" + ";")
+    alert('x2=' + s1.toString() + '-' + s2.toString() + "i" + ";")
   }
 
 </script>
