@@ -276,11 +276,11 @@
   }
 </script>
 <script id="ch0104/16">
-  var a = Math.abs(Number(prompt()))
-  var b = Math.abs(Number(prompt()))
-  var c = Math.abs(Number(prompt()))
-  if (a < (b + c) && a > (b - c) && a > (c - b)) {
-    console.log('YES')
+  var a = Math(Number(prompt()))
+  var b = Math(Number(prompt()))
+  var c = Math(Number(prompt()))
+  if (a + b > c && a + c > b && b + c > a) {
+    console.log('yes')
   } else {
     console.log('no')
   }
@@ -333,9 +333,9 @@
   }
 </script>
 <script id="ch0104/20">
-  var a = parseInt(prompt('a:'))
-  var b = parseInt(prompt('b:'))
-  var c = parseInt(prompt('c:'))
+  var a = parseInt(prompt())
+  var b = parseInt(prompt())
+  var c = parseInt(prompt())
   var delta = b * b - 4 * a * c
   var sqrtDelta = Math.sqrt(delta)
   var x1 = ((-b + sqrtDelta) / (2 * a)).toFixed(5)
@@ -343,14 +343,14 @@
   var s1 = (-b / (2 * a)).toFixed(5)
   var s2 = (Math.sqrt(-delta) / (2 * a)).toFixed(5)
   if (delta > 0) {
-    alert('x1=' + x1 + ';' + 'x2=' + x2)
+    console.log('x1=' + x1 + ';' + 'x2=' + x2)
 
   } else if (delta == 0) {
     var x = (-b) / (2 * a)
-    alert('x1=x2=' + x)
+    console.log('x1=x2=' + x.toFixed(5))
 
   } else if (delta < 0) {
-    alert('x1=' + s1.toString() + '+' + s2.toString() + "i" + ";" + 'x2=' + s1.toString() + '-' + s2.toString() + "i")
+    console.log('x1=' + s1.toString() + '+' + s2.toString() + "i" + ";" + 'x2=' + s1.toString() + '-' + s2.toString() + "i")
 
   }
 
@@ -362,4 +362,38 @@
   if (y % x > 0) {
     console.log(n - Math.ceil(y / x))
   }
+</script>
+
+<!-- 1.5 -->
+<script id="ch0105/01">
+  var n = Number(prompt())
+  var result = 0
+  for (var i = 0; i < n; i++) {
+    var score = Number(prompt())
+    result += score
+  } console.log((result / n).toFixed(2))
+</script>
+<script id="ch0105/02">
+  var n = 12
+  var result = 0
+  for (var i = 0; i < n; i++) {
+    var score = Number(prompt())
+    result += score
+  } console.log('$' + (result / n).toFixed(2))
+</script>
+<script id="ch0105/03">
+  var n = Number(prompt())
+  var result = 0
+  for (var i = 0; i < n; i++) {
+    var score = Number(prompt())
+    result += score
+  } console.log((result / n).toFixed(4))
+</script>
+<script id="ch0105/04">
+  var n = Number(prompt())
+  var result = 0
+  for (var i = 0; i < n; i++) {
+    var score = Number(prompt())
+    result += score
+  } console.log(result, (result / n).toFixed(5))
 </script>
