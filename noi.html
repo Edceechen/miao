@@ -668,14 +668,147 @@
 </script>
 <script id="ch0105/25">
   var i = 81
-  var k7 = i.toString(7)
-  var k9 = i.toString(9)
-  var s7 = k7.split("")
-  var s9 = k9.split("")
-
-  while (s7 != s9.reverse()) {
+  k7 = i.toString(7)
+  k9 = i.toString(9)
+  s7 = k7.split("")
+  s9 = k9.split("")
+  r9 = s9.reverse
+  while (s7 != r9) {
+    i = i + 1
+  } console.log(i, k7, k9)
+</script>
+<script id="ch0105/26">
+  var n = Number(prompt())
+  var i = 0
+  var k = 0
+  while (i < n) {
     i++
-  } console(i, k7, k9)
+    var m = Number(prompt())
+    var a = Math.floor(m / 1000)
+    var b = Math.floor(m % 1000 / 100)
+    var c = Math.floor(m % 1000 % 100 / 10)
+    var d = Math.floor(m % 1000 % 100 % 10)
+    if (d - a - b - c > 0) {
+      k++
+    }
+  } console.log(k)
+</script>
+<script id="ch0105/27">
+  var k = Number(prompt())
+  var sn = 0
+  var n = 1
+  while (sn <= k) {
+    sn += 1 / n
+    n++
+    r = n - 1
+  } console.log(r)
+</script>
+<script id="ch0105/28">
+  var n = Number(prompt())
+  var a = Math.floor(n / 100)
+  var b = Math.floor(n % 100 / 10)
+  var c = Math.floor(n % 100 % 10)
+  if (a >= b && a >= c) {
+    console.log(a)
+    if (b >= c) {
+      console.log(b, c)
+    } else if (c >= b)
+      console.log(c, b)
+  } else if (b >= c && b >= a) {
+    console.log(b)
+    if (c >= a) {
+      console.log(c, a)
+    } else if (a >= c) {
+      console.log(a, c)
+    }
+  } else if (c >= b && c >= a) {
+    console.log(c)
+    if (b >= a) {
+      console.log(b, a)
+    } else if (a >= b) {
+      console.log(a, b)
+    }
+  }
+  // console.log(n.toString().split("").reverse().join(""))
+</script>
+<script id="ch0105/29">
+  var n = Number(prompt())
+  if (n >= 0) {
+    console.log(parseInt(n.toString().split("").reverse().join("")))
+  } else if (n < 0) {
+    console.log(-parseInt(n.toString().split("").reverse().join("")))
+  }
+</script>
+<script id="ch0105/30">
+  var m = Number(prompt())
+  var k = Number(prompt())
+  var a = Math.floor(m / 10000)
+  var b = Math.floor(m % 10000 / 1000)
+  var c = Math.floor(m % 10000 % 1000 / 100)
+  var d = Math.floor(m % 10000 % 1000 % 100 / 10)
+  var e = Math.floor(m % 10000 % 1000 % 100 % 10)
+  var n = 0
+  if (a == k) {
+    n++
+  }
+  if (b == k) {
+    n++
+  }
+  if (c == k) {
+    n++
+  }
+  if (d == k) {
+    n++
+  }
+  if (e == k) {
+    n++
+  }
+  if (m % 19 == 0 && n == k) {
+    console.log('YES')
+  } else {
+    console.log('NO')
+  }
+</script>
+<script id="ch0105/31">
+  var N = Number(prompt())
+  var M = Number(prompt())
 
+  for (var n = 0; n < N; n++) {
+    var s = 1
+    for (var m = 0; m < M; m++) {
+      if (n % m == 0) {
+        s = s * -1
+      }
+    } if (s == -1 && n !== 0) {
+      console.log(n)
+    }
+  }
+</script>
+<script id="ch0105/32">
+  var n = Number(prompt())
+  var q = 1
+  var s = 0
+  var i = 0
+  while (i < n) {
+    i++
+    q = 1 + 1 / q
+    s = s + q
+  } console.log(s.toFixed(4))
+</script>
+<script id="ch0105/33">
+  var n = Number(prompt())
+  var i = 1
+  var k = 0
+  while (i <= n) {
+    var m = ((-1) ** (i - 1)) * (1 / i)
+    k = k + m
+    i++
+  } console.log(k.toFixed(4))
+</script>
+<script id="ch0105/34">
+  var n = Number(prompt())
+  var i = 0
+  while (i < n) {
 
+  }
 </script>
