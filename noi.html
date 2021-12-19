@@ -533,5 +533,149 @@
   } console.log(parseInt(M))
 </script>
 <script id="ch0105/16">
+  var N = Number(prompt())
+  var K = Number(prompt())
+  var i = 1
+  var h = N
+  var f = 200
+  while (h < f) {
+    f = f * (1 + K / 100)
+    i = i + 1
+    h = h + N
+
+  } if (i > 20) {
+    console.log('Impossible')
+  } else {
+    console.log(i)
+  }
+</script>
+<script id="ch0105/17">
+  var k = Number(prompt())
+  var x0 = 1
+  var x = 1
+  var i = 2
+  if (i >= k) {
+    console.log(1)
+  }
+  while (i < k) {
+    i = i + 1
+    var y = x0
+    x = x + y
+    x0 = x - y
+  } console.log(x)
+</script>
+<script id="ch0105/18">
+  var n = Number(prompt())
+  var x1 = Number(prompt())
+  var x2 = Number(prompt())
+  for (var i = 1; i < n; i++) {
+    var s1 = Number(prompt())
+    var s2 = Number(prompt())
+    if ((s2 / s1 - x2 / x1) < -0.05) {
+      console.log('worse')
+    } else if ((s2 / s1 - x2 / x1) > 0.05) {
+      console.log('better')
+    } else {
+      console.log('same')
+    }
+  }
+</script>
+<script id="ch0105/19">
+  var n = Number(prompt())
+  var s = 0
+  for (var i = 0; i < n; i++) {
+    var x = Number(prompt())
+    var y = Number(prompt())
+    var p = Number(prompt())
+    s += Math.sqrt(x ** 2 + y ** 2) / 50 * 2 + 1.5 * p
+  } console.log(Math.ceil(s))
+</script>
+<script id="ch0105/20">
+  var h = Number(prompt())
+  var s = 0
+  for (var i = 0; i < 10; i++) {
+    s += 1.5 * h
+    l = s - 0.5 * h
+    h = 0.5 * h
+  } console.log(l, h)
+</script>
+<script id="ch0105/21">
+  var N = Number(prompt())
+  while (N != 1) {
+    if (N % 2 == 0) {
+      console.log(N + '/2' + '=' + N / 2)
+      N = N / 2
+    } else {
+      console.log(N + '*3' + '+1' + '=' + (N * 3 + 1))
+      N = N * 3 + 1
+    }
+  } console.log("End")
+</script>
+<script id="ch0105/22">
+
+  var s = 0
+  var i = 0
+  var a = 0
+  var k = 0
+  while (i < 12) {
+
+    i = i + 1
+    var m = Number(prompt())
+    if (300 - m + a >= 100) {
+      s += Math.floor((300 - m + a) / 100)
+      a = (300 - m + a) % 100
+    } else if (300 - m + a >= 0) {
+      a = a + 300 - m
+    } else if (300 - m + a < 0) {
+      k = i
+      a = 0
+    }
+  } if (k !== 0) {
+    console.log(-k)
+  } else if (k == 0) {
+    console.log(s * 120 + a)
+  }
+</script>
+<script id="ch0105/23">
+  var m = Number(prompt())
+  var n = Number(prompt())
+  var i = 0
+  var p = 0
+  while (i < n) {
+    i++
+    var s = Number(prompt())
+    if (m >= s) {
+      m = m - s
+    } else {
+      p++
+    }
+  } console.log(p)
+</script>
+<script id="ch0105/24">
+  var n = Number(prompt())
+  var i = 0
+  var k = 0
+  while (i < n) {
+    i++
+    var a = Number(prompt())
+    var b = Number(prompt())
+    if (a <= 140 && a >= 90 && b >= 60 && b <= 90) {
+      k++
+    } else {
+      k = 0
+    }
+  } console.log(k)
+</script>
+<script id="ch0105/25">
+  var i = 81
+  var k7 = i.toString(7)
+  var k9 = i.toString(9)
+  var s7 = k7.split("")
+  var s9 = k9.split("")
+
+  while (s7 != s9.reverse()) {
+    i++
+  } console(i, k7, k9)
+
 
 </script>
