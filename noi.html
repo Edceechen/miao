@@ -667,6 +667,17 @@
   } console.log(k)
 </script>
 <script id="ch0105/25">
+  for (var i = 100; i <= 7 ** 3 - 1; i++) {
+    var a7 = i % 7 //7进制右数一位
+    var b7 = (i - a7) / 7 % 7  //7进制右数二位
+    var c7 = (i - a7) / 7 / 7 % 7 //7进制右数3位
+    var a9 = i % 9
+    var b9 = (i - a9) / 9 % 9
+    var c9 = (i - a9 - b9 * 9) / 9 / 9 % 9
+    if (a7 == c9 && b7 == b9 && c7 == a9) {
+      console.log(i, '' + c7 + b7 + a7, '' + c9 + b9 + a9)
+    }
+  }
   // var i = 81
   // var s7 = 1
   // var s9 = 2
@@ -823,5 +834,79 @@
   }
 </script>
 <script id="ch0105/35">
+  var n = Number(prompt())
+  var m = 1
+  var s = 1
+  for (var i = 1; i <= n; i++) {
+    m = m * i
+    s = s + 1 / m
+  } console.log(s.toFixed(10))
+</script>
+<script id="ch0105/36">
+  var x = Number(prompt())
+  var n = Number(prompt())
+  var k = 1
+  var s = 1
+  for (var i = 1; i <= n; i++) {
+    k = x ** i
+    s = s + k
+  } console.log(s.toFixed(2))
+</script>
+<script id="ch0105/37">
 
+</script>
+<script id="ch0105/38">
+  var m = Number(prompt())
+  for (var i = 0; i < m; i++) {
+    var n = Number(prompt())
+    if (n == 0) {
+      var c = Number(prompt())
+      console.log(0)
+    } else {
+
+      for (var j = n; j >= 0; j--) {
+        var c = Number(prompt())
+        if (j !== 0) {
+          console.log(c * j)
+        }
+      }
+    }
+  }
+</script>
+<script id="ch0105/39">
+  var n = Number(prompt())
+  var sum = 0
+  for (var i = 1; i <= n; i++) {
+    var r = false
+    if (i % 7 == 0) {
+      r = true
+    } else {
+      var m = i
+      while (m > 0) {
+        var d = m % 10
+        if (d == 7) {
+          r = true
+          break
+        }
+        m = (m - d) / 10
+      }
+    }
+    if (r == false) {
+      sum += i * i
+    }
+  } console.log(sum)
+</script>
+<script id="ch0105/40">
+  var n = Number(prompt())
+  var count = 0
+  for (var i = 1; i <= n; i++) {
+    var m = i
+    while (m > 0) {
+      var d = m % 10
+      if (d === 1) {
+        count++
+      }
+      m = (m - d) / 10
+    }
+  } console.log(count)
 </script>
