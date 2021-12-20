@@ -667,15 +667,15 @@
   } console.log(k)
 </script>
 <script id="ch0105/25">
-  var i = 81
-  k7 = i.toString(7)
-  k9 = i.toString(9)
-  s7 = k7.split("")
-  s9 = k9.split("")
-  r9 = s9.reverse
-  while (s7 != r9) {
-    i = i + 1
-  } console.log(i, k7, k9)
+  // var i = 81
+  // k7 = i.toString(7)
+  // k9 = i.toString(9)
+  // s7 = k7.split("")
+  // s9 = k9.split("")
+  // r9 = s9.reverse
+  // while (s7 != r9) {
+  //   i = i + 1
+  // } console.log(i, k7, k9)
 </script>
 <script id="ch0105/26">
   var n = Number(prompt())
@@ -807,8 +807,19 @@
 </script>
 <script id="ch0105/34">
   var n = Number(prompt())
-  var i = 0
-  while (i < n) {
-
+  var i = 1
+  var m = 1
+  var s = 0
+  while (i <= n) {
+    m = m * i
+    i++
+    s = s + m
+  } if (n == 1) {
+    console.log(1)
+  } else {
+    console.log(s)
   }
+</script>
+<script id="ch0105/35">
+
 </script>
