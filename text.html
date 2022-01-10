@@ -108,4 +108,94 @@
     day = (day + 1) % 7
     return day
   }
+  function rgb(r, g, b) {
+    return 'rgb(' + r + ',' + g + ',' + b + ')'
+  }
+  //`rgb(${x},${y},255)`
+</script>
+<script>
+  var n = Number(prompt())
+  console.log(n.split('').reverse().join(''))
+</script>
+<script>
+  //递归 x**n
+  function sn(a, n) {
+    if (n == 0) {
+      return 1
+    } else {
+      return a * sn(a, n - 1)
+    }
+  }
+</script>
+<script>
+  //输入n个数并反向输出
+  //输入一个数，输入n-1个数并反向输出
+  function inputAndReverse(n) {
+    if (n == 0) {
+      return
+    }
+    var x = Number(prompt())
+    inputAndReverse(n - 1)
+    console.log(x)
+  }
+</script>
+<script>
+  //斐波那契数列
+  debugger
+  function fibb(n) {
+    if (n < 3) {
+      return 1
+    } else {
+      return fibb(n - 1) + fibb(n - 2)
+    }
+  }
+</script>
+<script>
+  //  给一个数组返回一个链表
+  function arrayToList(array) {
+    if (array.length == 0) {
+      return null
+    }
+    var nodes = []
+    for (var i = 0; i < array.length; i++) {
+      //对于数组中的每个值，创建一个链表节点
+      var node = {
+        val: array[i],
+        next: null,
+      }
+      nodes.push(node)
+    }
+    for (var i = 0; i < nodes.length - 1; i++) {
+      //把每个结点的next指向后续结点
+      nodes[i].next = nodes[i + 1]
+    }
+    return nodes[0]
+  }
+</script>
+<script>
+  function isGreaterThan10(n) {
+    if (n > 10) {
+      return true
+    } else {
+      return false
+    }
+  }
+</script>
+<script>
+  function stringify(value) {
+    if (Array.isArray(value)) {
+
+    } else if (value && typeof value == 'object') {
+
+    }
+  }
+</script>
+<script>
+  function reduce() {
+    var ary = [1, 2, 3, 4, 5, 6, 7]
+    var max = -Infinity
+    for (var i = 0; i < array.length; i++) {
+      initial = reducer(initial, ary[i])
+    }
+  }
 </script>
