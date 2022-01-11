@@ -1,4 +1,4 @@
-var Edceechen = {
+var edceechen = {
   chunk: function (array, size) {
     var l = array.length
     var list = []
