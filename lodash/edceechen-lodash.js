@@ -13,6 +13,6 @@ var edceechen = {
         k = 0
       }
     } newarray.push(list)
-    console.log(newarray)
+    return newarray
   }
 }
