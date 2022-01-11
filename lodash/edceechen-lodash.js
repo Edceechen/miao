@@ -12,7 +12,9 @@ var edceechen = {
         list = []
         k = 0
       }
-    } newarray.push(list)
+    } if (k !== 0) {
+      newarray.push(list)
+    }
     return newarray
   }
 }
