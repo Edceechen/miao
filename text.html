@@ -210,16 +210,27 @@
 </script>
 <script>function quickSort(ary) {
     var randomIdx = Math.floor(Math.random() * ary.length)
-    var randomElt = ary[randomIdx]
+    var pivot = ary[randomIdx]
     var left = []
     var mid = []
     var right = []
     for (var i = 0; i < ary.length; i++) {
-
+      if (ary[i] < pivot) {
+        left.push(ary[i])
+      } else if (ary[i] > pivot) {
+        right.push(ary[i])
+      } else {
+        mid.push(ary[i])
+      }
     }
+    quickSort(left)
+    quickSort(right)
+    return [...left, ...mid, ...right]
   }
 
 </script>
 <script>
+  function mapValues(obj, mapper) {
 
+  }
 </script>
