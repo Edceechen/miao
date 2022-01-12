@@ -41,16 +41,16 @@ var edceechen = {
   },
 
   dropRight: function (array, n = 1) {
-    let DRarray = []
-    let Lrarray = []
-    DRarray = array.reverse()
+    let drarray = []
+    let lrarray = []
+    drarray = array.reverse()
     if (n == null) {
-      DRarray.splice(0, 1)
-      Lrarray = DRarray
+      drarray.splice(0, 1)
+      lrarray = drarray
     } else {
-      DRarray.splice(0, n)
-      Lrarray = DRarray
-    } return Lrarray.reverse()
+      drarray.splice(0, n)
+      lrarray = drarray
+    } return lrarray.reverse()
   },
 
   fill: function (array, value, start = 0, end = array.length) {
