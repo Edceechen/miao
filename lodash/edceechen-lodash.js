@@ -27,7 +27,7 @@ var edceechen = {
       }
     } return newarray
   },
-  drop: function (array, n) {
+  drop: function (array, [n = 1]) {
     let newarray = []
     for (let i = 0; i < array.length; i++) {
       if (n == null) {
@@ -39,6 +39,5 @@ var edceechen = {
       } return newarray
     }
   },
-
 
 }
