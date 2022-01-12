@@ -12,7 +12,7 @@ var edceechen = {
         list = []
         k = 0
       }
-    } if (k !== 0) {
+    } if (list.length !== 0) {
       newarray.push(list)
     }
     return newarray
