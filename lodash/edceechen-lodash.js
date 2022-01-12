@@ -27,5 +27,18 @@ var edceechen = {
       }
     } return newarray
   },
+  drop: function (array, n) {
+    let newarray = []
+    for (let i = 0; i < array.length; i++) {
+      if (n == null) {
+        array.splice(0, 1)
+        newarray = array
+      } else {
+        array.splice(0, n)
+        newarray = array
+      } return newarray
+    }
+  },
+
 
 }
