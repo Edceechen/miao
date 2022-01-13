@@ -54,6 +54,39 @@ var edceechen = {
   },
 
   fill: function (array, value, start = 0, end = array.length) {
+    for (let i = start; i < end; i++) {
+      array[i] = value
+    } return array
+  },
 
-  }
+  flatten: function (array) {
+    let newarray = []
+    for (let i = 0; i < array.length; i++) {
+
+      if (Array.isArray(array[i])) {
+        newarray.push(...array[i])
+      } else {
+        newarray.push(array[i])
+      }
+    } return newarray
+  },
+
+  flattenDeep: function (array) {
+    let newarray = []
+    for (let i = 0; i < array.length; i++) {
+      var item = array[i]
+      if (Array.isArray(item)) {
+        item = flattenDeep(item)
+        newarray.push(...item)
+      } else {
+        newarray.push(item)
+      }
+    } return newarray
+  },
+
+  flattenDepth: function (array, depth = 1) {
+    for (i = 0; i < depth; i++) {
+      array = flatten(array)
+    } return array
+  },
 }
