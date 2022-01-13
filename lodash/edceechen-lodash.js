@@ -59,7 +59,7 @@ var edceechen = {
     } return array
   },
 
-  flatten: function flatten(array) {
+  flatten: function (array) {
     let newarray = []
     for (let i = 0; i < array.length; i++) {
 
@@ -71,12 +71,12 @@ var edceechen = {
     } return newarray
   },
 
-  flattenDeep: function flattenDeep(array) {
+  flattenDeep: function (array) {
     let newarray = []
     for (let i = 0; i < array.length; i++) {
       var item = array[i]
       if (Array.isArray(item)) {
-        item = flattenDeep(item)
+        item = this.flattenDeep(item)
         newarray.push(...item)
       } else {
         newarray.push(item)
@@ -86,7 +86,7 @@ var edceechen = {
 
   flattenDepth: function (array, depth = 1) {
     for (i = 0; i < depth; i++) {
-      array = flatten(array)
+      array = this.flatten(array)
     } return array
   },
 }
