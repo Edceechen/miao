@@ -59,7 +59,7 @@ var edceechen = {
     } return array
   },
 
-  flatten: function (array) {
+  flatten: function flatten(array) {
     let newarray = []
     for (let i = 0; i < array.length; i++) {
 
@@ -71,7 +71,7 @@ var edceechen = {
     } return newarray
   },
 
-  flattenDeep: function (array) {
+  flattenDeep: function flattenDeep(array) {
     let newarray = []
     for (let i = 0; i < array.length; i++) {
       var item = array[i]
