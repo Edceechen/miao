@@ -231,6 +231,146 @@
 </script>
 <script>
   function mapValues(obj, mapper) {
+    var
+  }
+</script>
+<script>
+  root = {
+    val: 1, left: {
+      val: 2,
+      left: null,
+      right: {
+        val: 4,
+        left: null,
+        right: null,
+      },
+    },
+    right: {
+      val: 8,
+      left: null,
+      right: null,
+    },
+  }
+</script>
+<script> var ary = []
+  function treeToAry(tree, idx = 0) {
+    if (!tree) {
+      return ary
+    }
 
+    treeToAry(tree.left, idx * 2 + 1)
+    treeToAry(tree.right, idx * 2 + 2)
+  }
+</script>
+<script>
+  //二叉链表转数组
+  function createTreeNode(val) {
+    return {
+      val: val,
+      left: null,
+      right: null,
+    }
+  }
+  //将使用顺序数组存放的根结点在rootPos位置的二叉树，转换为二叉链表
+  function aryToTree(ary, rootPos = 0) {
+    if (ary[rootPos] == null) {
+      return null
+    }
+    var rootNode = createTreeNode(ary[rootPos])
+    var leftPos = rootPos * 2 + 1 //左子树结点
+    var rightPos = rootPos * 2 + 2 //右子树结点
+    var leftTree = aryToTree(ary, leftPos)
+    var rightTree = aryToTree(ary, rightPos)
+    rootNode.left = leftTree
+    rootNode.right = rightTree
+    return rootNode
+  }
+</script>
+<script>
+  //二叉树链表转化为数组
+  function treeToAry(tree, idx = 0) {
+    if (!tree) {
+
+    }
+    var ary = []
+    ary[idx] = tree.val
+    treeToAry(tree.left, idx * 2 + 1)
+    treeToAry(tree.right, idx * 2 + 1)
+  }
+
+</script>
+<script>
+  //数组转二叉链表
+  function createTreeNode(val) {
+    return {
+      val: val,
+      left: null,
+      right: null,
+    }
+  }
+  function condensedAryToTree(ary) {
+    var nodes = []
+    if (ary.length == 0) {
+      return null
+    }
+    //用数组的第一个元素创建根结点并存入结点数组
+    var root = createTreeNode(ary[0])
+    nodes.push(root)
+    for (var i = 1; i < ary.length; i++) {
+      var current = nodes.shift()
+      var node
+      if (ary[i] == null) {
+        node = null
+      } else {
+        var node = createTreeNode(ary[i])
+        nodes.push(node)
+      }
+      current.left = node
+      i++
+
+      if (ary[i] == null) {
+        node = null
+      } else {
+        var node = createTreeNode(ary[i])
+        nodes.push(node)
+      }
+      current.right = node
+
+    }
+    return root
+  }
+</script>
+<script>
+  //通过val构建一个结点，并将其插入到根结点为root的BST中并返回这颗BST
+  function insertIntoBST(root, val) {
+    var node = createTreeNode(val)
+    if (!root) {
+      return node
+    } else {
+      if (val < root.val) {
+        root.left = insertIntoBST(root.left, val)
+      } else {
+        root.right = insertIntoBST(root.right, val)
+      }
+      return root
+    }
+  }
+</script>
+<script>
+  function forOwn(obj, iterator) {
+    var hasOwn = Object.prototype.hasOwnProperty
+    for (var key in obj) {
+      if (obj.hasOwnProperty(val)) {
+        iterator(obj[key], key)
+      }
+    }
+  }
+  forOwn(obj, (val, key) => {
+    return false
+  })
+</script>
+<script>
+  TextCell.prototype.draw = function (width, height) {
+    var result = []
   }
 </script>

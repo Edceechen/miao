@@ -89,4 +89,26 @@ var edceechen = {
       array = this.flatten(array)
     } return array
   },
+
+  // fromPairs: function (pairs) {
+  //   let nary = {}
+  //   for (let i = 0; i < pairs.length; i++) {
+  //     if (pairs(i) !== []) {
+  //       nary.
+  //     }
+  //   }
+  // }
+  isArguments: function (value) {
+    var r = Object.prototype.toString.call(value)
+    if (r == '[object String]') {
+      return ture
+    } else {
+      return false
+    }
+  },
+  isArray: function (value) {
+    var r = value instanceof Array
+    return r
+  },
+
 }
