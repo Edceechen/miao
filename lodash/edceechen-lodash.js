@@ -110,5 +110,22 @@ var edceechen = {
     var r = value instanceof Array
     return r
   },
+  isBoolean: function (value) {
+    if (value == null) {
+      return false
+    } return value == Boolean || value == Object
+  },
+  isEmpty: function (value) {
+    for (let key in value) {
+      return false
+    }
+    return true
+  },
+  isEqual: function (value, other) {
 
+  },
+  // fromPairs: function (pairs) {
+  //   var lry = []
+
+  // },
 }
