@@ -124,8 +124,38 @@ var edceechen = {
   isEqual: function (value, other) {
 
   },
-  // fromPairs: function (pairs) {
-  //   var lry = []
+  fromPairs: function (pairs) {
+    var lry = {}
+    for (var i = 0; i < pairs.length; i++) {
+      lry[pairs[i][1]] = pairs[i][1]
+    } return lry
+  },
+  // intersectionBy: function (arrays, comparator) {
 
   // },
+  // intersection: function (arrays, comparator) {
+
+  // },
+  head: function (array) {
+    return array[0]
+
+  },
+  indexOf: function (array, value, fromIndex = 0) {
+    for (var i = fromIndex; i < array.length; i++) {
+      if (array[i] = value) {
+        return i
+      }
+    }
+  },
+  initial: function (array) {
+    var alast = []
+    for (var i = 0; i < length - 1; i++) {
+      alast.push(array[i])
+    }
+    return alast
+  },
+  Intersection: function (arrays) {
+
+  }
+
 }
