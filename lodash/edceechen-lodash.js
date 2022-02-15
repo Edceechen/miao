@@ -127,7 +127,7 @@ var edceechen = {
   fromPairs: function (pairs) {
     var lry = {}
     for (var i = 0; i < pairs.length; i++) {
-      lry[pairs[i][1]] = pairs[i][1]
+      lry[pairs[i][0]] = pairs[i][1]
     } return lry
   },
   // intersectionBy: function (arrays, comparator) {
@@ -156,6 +156,23 @@ var edceechen = {
   },
   Intersection: function (arrays) {
 
-  }
+  },
+  join: function (array, separator = ',') {
+    var result = ''
+    for (var i = 0; i < array.length; i++) {
+      if (i < array.length - 1) {
+        result += array[i] + '' + separator
+      }
+      else {
+        result += array[i]
+      }
+    } return result
+  },
+  last: function (array) {
+    var k = array.length - 1
+    return array[k]
+  },
+  lastIndexOf: function (array, value, fromIndex = array.length - 1) {
 
+  }
 }
