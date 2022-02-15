@@ -142,14 +142,14 @@ var edceechen = {
   },
   indexOf: function (array, value, fromIndex = 0) {
     for (var i = fromIndex; i < array.length; i++) {
-      if (array[i] = value) {
+      if (array[i] == value) {
         return i
       }
     }
   },
   initial: function (array) {
     var alast = []
-    for (var i = 0; i < length - 1; i++) {
+    for (var i = 0; i < array.length - 1; i++) {
       alast.push(array[i])
     }
     return alast
