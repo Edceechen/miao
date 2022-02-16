@@ -173,6 +173,18 @@ var edceechen = {
     return array[k]
   },
   lastIndexOf: function (array, value, fromIndex = array.length - 1) {
+    for (var i = fromIndex; i >= 0; i--) {
+      if (array[i] == value) {
+        return i
+      }
+    }
+  },
+  nth: function (array, n = 0) {
+    if (n >= 0) {
+      return array[n]
+    } else {
+      return array[array.length + n]
+    }
+  },
 
-  }
 }
