@@ -372,5 +372,21 @@
 <script>
   TextCell.prototype.draw = function (width, height) {
     var result = []
+
+  }
+</script>
+<!-- String.prototype.match2 = function() {}
+String.prototype.matchAll2 = function() {}
+String.prototype.replace2 = function() {}
+String.prototype.replaceAll2 = function() {}
+String.prototype.split2 = function() {}
+String.prototype.search2 = function() {}
+RegExp.prototype.test2 = function() {} -->
+<script>
+  RegExp.prototype.test2 = function (str) {
+    return !!this.exec(str)
+  }
+  String.prototype.search2 = function () {
+
   }
 </script>

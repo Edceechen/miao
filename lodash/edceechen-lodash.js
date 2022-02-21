@@ -173,11 +173,12 @@ var edceechen = {
     return array[k]
   },
   lastIndexOf: function (array, value, fromIndex = array.length - 1) {
+
     for (var i = fromIndex; i >= 0; i--) {
       if (array[i] == value) {
         return i
       }
-    }
+    } return -1
   },
   nth: function (array, n = 0) {
     if (n >= 0) {
@@ -186,5 +187,7 @@ var edceechen = {
       return array[array.length + n]
     }
   },
+  pull: function (array, values) {
 
+  }
 }
